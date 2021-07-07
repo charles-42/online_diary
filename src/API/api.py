@@ -5,6 +5,7 @@ import uvicorn
 from fastapi import FastAPI, Form
 from src.utils.functions import *
 from src.API.classes import *
+from src.database.create import *
 from datetime import date
 
 #API initialization
@@ -78,4 +79,6 @@ def delete_text(delete_text:Text):
 
 #When we call this file from the terminal, the api is automaticaly launched
 if __name__ == "__main__":
+    create_db_Diary_if_not_exist()
+    create_text_if_not_exist()
     uvicorn.run(app, host="127.0.0.1", port=8081)
