@@ -12,8 +12,8 @@
     .
     ├── src                     # Source files (alternatively `dist`
         ├── API                 # Contains the CRUD and the classes needed for the API
-    │   ├── database            # Script to create the database
-    │   └── utils               # Useful functions and config files
+        ├── database            # Script to create the database
+        └── utils               # Useful functions and config files
     ├── test                    # Automated tests 
-    │   └── conftest.py         # Define testing environment
+        └── conftest.py         # Define testing environment
     └── README.md
